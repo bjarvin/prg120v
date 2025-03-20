@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Eksempel 1</title>
+</head>
+<body>
+  <h3>Eksempel 1</h3>
+    
+  <form >
+    Fornavn 
+    Etternavn  
+  </form>
+
+</body>
+</html>
