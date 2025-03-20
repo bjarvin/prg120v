@@ -1,0 +1,15 @@
+<?php     /* Eksempel 3 */
+/*
+/*    Programmet legger inn 3 navn i et array
+/*    Programmet skriver ut de 3 navnene
+*/
+
+  print("Det f&oslash;rste navnet er <br/><br/>");
+
+  print("Alle navnene er <br/> ");
+
+  for ()
+    {
+    }
+
+?>
