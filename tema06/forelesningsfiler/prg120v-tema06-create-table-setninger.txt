@@ -1,0 +1,4 @@
+CREATE TABLE poststed (
+postnr CHAR(4) NOT NULL,
+poststed VARCHAR(50) NOT NULL,
+PRIMARY KEY (postnr));

@@ -1,0 +1,21 @@
+<?php  /* statisk-listeboks */
+/*
+/*  Programmet lager et skjema med en statisk listeboks med ukedag der en rad er valgt
+*/
+?> 
+
+<h3>Velg ukedag</h3>
+
+<form method="post" action="" id="velgUkedagSkjema" name="velgUkedagSkjema">
+  Ukedag
+  
+  <input type="submit" value="Velg ukedag" id="velgUkedagKnapp" name="velgUkedagKnapp" /> 
+</form>
+
+<?php
+  if (isset($_POST ["velgUkedagKnapp"]))
+    {
+      $ukedag=$_POST ["ukedag"];
+      print ("F&oslash;lgende ukedag er valgt: $ukedag <br />");
+    }
+?> 
