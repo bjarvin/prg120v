@@ -1,0 +1,12 @@
+<?php  /* db-tilkobling */
+/*
+/*  Programmet foretar tilkobling til database-server og valg av database
+*/
+
+  $vert="localhost";
+  $bruker="gb";
+  $passord="*****";
+  $database="gb"; /* verdier satt for vert, bruker, passord og database for tilkobling til databaseserver */
+
+    /* tilkobling til database-serveren utført */
+?>

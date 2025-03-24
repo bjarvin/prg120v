@@ -1,0 +1,21 @@
+<?php  /* vis-alle-poststeder */
+/*
+/*  Programmet skriver ut alle registrerte poststeder
+*/
+
+  /* tilkobling til database-serveren utført og valg av database foretatt */
+  /* SQL-setning sendt til database-serveren */
+  /* antall rader i resultatet beregnet */
+
+  print ("<h3>Registrerte poststeder</h3>");
+  print ("<table border=1>");  
+  print ("<tr><th align=left>postnr</th> <th align=left>poststed</th></tr>"); 
+
+  for ()
+    {
+        /* ny rad hentet fra spørringsresultatet */
+
+      print ("<tr> <td> $postnr </td> <td> $poststed </td> </tr>");
+    }
+  print ("</table>"); 
+?>
