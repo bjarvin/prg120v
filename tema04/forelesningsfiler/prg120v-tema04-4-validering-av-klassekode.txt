@@ -1,0 +1,38 @@
+<?php  /*  Eksempel 4 */
+/*
+/*    Programmet mottar klassekode fra et HTML-skjema 
+/*    Programmet sjekker om klassekode er korrekt fylt ut
+*/
+  $klassekode=$_POST ["klassekode"];
+
+  if ()  /* klassekode er ikke fylt ut */
+    {
+      print("Klassekode er ikke fylt ut <br />");
+    }
+  else if ()  /* klassekode består ikke av 3 tegn */
+    {
+      print("Klassekode best&aring;r ikke av 3 tegn <br />");
+    }
+  else
+    {
+      if ()  /* tegn1 er ikke bokstav */ 
+        {
+          print("Første tegn er ikke en bokstav <br />");
+        }
+		
+      if ()  /* tegn2 er ikke bokstav */
+        {
+           print("Andre tegn er ikke en bokstav <br />");
+        }
+		
+      if ()  /* tegn3 er ikke et siffer */ 
+        {
+          print("Siste tegn er ikke et siffer  <br />");
+        }
+    }
+
+  if ()  /* klassekode er  korrekt fylt ut */
+    {
+      print("Klassekode er korrekt fylt ut <br />");
+    }
+?>
