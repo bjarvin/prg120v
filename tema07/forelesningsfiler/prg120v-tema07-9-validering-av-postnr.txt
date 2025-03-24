@@ -1,0 +1,37 @@
+Se tema04-eksempel-3
+
+
+PHP-kode
+
+$postnr=$_POST ["postnr"];
+
+if (!$postnr) 
+  {
+    print("Postnr er ikke fylt ut <br />");
+  }
+else if (strlen($postnr)!=4)  
+  {
+    print("Postnr består ikke av 4 tegn <br />");
+  }
+else if (!ctype_digit($postnr))  
+  {
+    print("Postnr består ikke bare av siffre  <br />");
+  }
+else
+  {
+    print("Postnr er korrekt fylt ut <br />");
+  }
+
+
+Python-kode
+
+postnr=input("Postnr: ")
+
+if not postnr: 
+  print("Postnr er ikke fylt ut")
+elif len(postnr)!=4: 
+  print("Postnr består ikke av 4 tegn")
+elif not postnr.isnumeric(): 
+  print("Postnr består ikke bare av siffre ")
+else:
+  print("Postnr er korrekt fylt ut")

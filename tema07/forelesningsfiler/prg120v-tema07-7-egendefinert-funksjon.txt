@@ -1,0 +1,31 @@
+Se tema04-eksempel-1
+
+
+PHP-kode
+
+function fulltNavn($fornavn,$etternavn)
+{
+  $navn=$fornavn . " " . $etternavn;	
+  return $navn; 	
+}
+
+$fornavn=$_POST ["fornavn"];
+$etternavn=$_POST ["etternavn"];  
+
+$navn=fulltNavn($fornavn,$etternavn);
+
+print ("Navnet er $navn");  
+
+
+Python-kode
+
+def fulltNavn(fornavn,etternavn):
+  navn=fornavn + " " + etternavn
+  return navn 	
+
+fornavn=input("Fornavn: ")
+etternavn=input("Etternavn:")
+
+navn=fulltNavn(fornavn,etternavn)
+
+print ("Navnet er " , navn)

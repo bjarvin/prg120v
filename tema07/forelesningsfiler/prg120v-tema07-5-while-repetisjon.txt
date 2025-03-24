@@ -1,0 +1,21 @@
+Se tema03-eksempel-2
+
+
+PHP-kode
+
+$tall=1;  
+
+while ($tall<=10)
+  {
+    print("$tall <br/>"); 
+    $tall++;  
+  }
+
+
+Python-kode
+
+tall=1
+
+while tall<=10:
+  print(tall)
+  tall+=1
