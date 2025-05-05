@@ -1,0 +1,12 @@
+<?php  /* db-tilkobling */
+/*
+/*  Programmet foretar tilkobling til database-server og valg av database
+*/
+
+$host = getenv('DB_HOST');
+$username = getenv('DB_USER');
+$password = getenv('DB_PASSWORD');
+$database = getenv('DB_DATABASE'); /* verdier satt for vert, bruker, passord og database for tilkobling til databaseserver */
+
+    /* tilkobling til database-serveren utført */
+?>
