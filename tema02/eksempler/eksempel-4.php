@@ -29,8 +29,9 @@
     }
   else  
     {   
-      print("Begge p&oslash;rsm&aring;lene har ikke gyldige svar");
+      print("Begge sp&oslash;rsm&aring;lene har ikke gyldige svar");
     }
 
 ?>
+
 
