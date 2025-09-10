@@ -9,16 +9,19 @@
     {
       print("Postnr er ikke fylt ut <br />");
     }
-  else if (strlen($postnr)!=4)  /* postnr består ikke av 4 tegn */
+  else if (strlen($postnr)!=4)  /* postnr bestÄºr ikke av 4 tegn */
     {
-          print("Postnr består ikke av 4 tegn <br />");
+          print("Postnr best&aring;r ikke av 4 tegn <br />");
     }
   else if (!ctype_digit($postnr))  /* minst ett av tegnene er ikke et siffer */
     {
-       print("Postnr består ikke bare av siffre  <br />");
+       print("Postnr best&aring;r ikke bare av siffre  <br />");
     }
 else
 	{
 		print("Postnr er korrekt fylt ut <br />");
 	}
-?>
+
+?>  
+&oslash;
+&aring;
