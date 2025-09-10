@@ -23,5 +23,4 @@ else
 	}
 
 ?>  
-&oslash;
-&aring;
+
