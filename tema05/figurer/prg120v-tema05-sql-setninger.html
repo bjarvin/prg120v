@@ -1,0 +1,58 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   <meta name="GENERATOR" content="Mozilla/4.77 [en] (Win98; U) [Netscape]">
+   <meta name="Author" content="Geir Bjarvin">
+   <title>prg120v-sql-setninger</title>
+
+</head>
+<body bgcolor="#FFFFFF">
+
+<h2> PRG120V - SQL-SETNINGER </h2>
+<h3>create table-setninger</h3>
+<p>CREATE TABLE poststed (
+</p>
+<blockquote>
+  <p>postnr  CHAR(4) NOT NULL, <br>
+    poststed VARCHAR(50) NOT NULL,<br>
+    PRIMARY KEY (postnr));</p>
+</blockquote>
+<p><span id="page30R_mcid29"><span role="presentation" dir="ltr">CREATE TABLE ansatt (</span></span></p>
+<blockquote>
+  <p><span>		<span role="presentation" dir="ltr">	ansattnr CHAR(4) NOT NULL,</span><br role="presentation">
+    <span role="presentation" dir="ltr">navn VARCHAR(50) NOT NULL,</span><br role="presentation">
+    <span role="presentation" dir="ltr">adresse VARCHAR(50),</span><br role="presentation">
+    <span role="presentation" dir="ltr">postnr CHAR(4),</span><br role="presentation">
+    <span role="presentation" dir="ltr">mndloenn INT,</span><br role="presentation">
+    <span role="presentation" dir="ltr">PRIMARY KEY (ansattnr),</span><br role="presentation">
+    <span role="presentation" dir="ltr">FOREIGN KEY (postnr) REFERENCES poststed (postnr)</span><span role="presentation" dir="ltr">)</span></span>;</p>
+</blockquote>
+<blockquote>
+  <BLOCKQUOTE>&nbsp;</BLOCKQUOTE>
+</blockquote>
+<h3>drop table-setninger</h3>
+<p> <span id="page30R_mcid34"><span role="presentation" dir="ltr">DROP TABLE ansatt</span></span>;<br>
+DROP TABLE poststed;</p>
+<p>&nbsp;</p>
+<h3>insert into-setninger</h3>
+<p>INSERT INTO poststed VALUES ('3117' , 'T&oslash;nsberg'); <BR>
+INSERT INTO poststed VALUES ('3124' , 'T&oslash;nsberg'); <BR>
+INSERT INTO poststed VALUES ('3229' , 'Sandefjord'); </p>
+<p><span id="page34R_mcid56"><span role="presentation" dir="ltr">INSERT INTO ansatt VALUES ('1001' , 'Andersen' , 'Storgt. 1' , '3124' , 10000);</span><br role="presentation">
+    <span role="presentation" dir="ltr">INSERT INTO ansatt VALUES ('1002' , 'Hansen' , 'Storgt. 2' , '3229' , 20000);</span><br role="presentation">
+    <span role="presentation" dir="ltr">INSERT INTO ansatt VALUES ('1003' , 'Olsen' , NULL, NULL, NULL);</span><br role="presentation">
+    <span role="presentation" dir="ltr">INSERT INTO ansatt VALUES ('1004' , 'Jensen' , 'Storgt. 4' , '3124' , 40000);</span><br role="presentation">
+  <span role="presentation" dir="ltr">INSERT INTO ansatt (ansattnr, navn) VALUES ('1005' , 'Carlsen</span></span>');</p>
+<p>&nbsp;</p>
+<h3>delete from-setninger</h3>
+<p> DELETE FROM ansatt;<br>
+DELETE FROM poststed;</p>
+<p>&nbsp;</p>
+<h3>&nbsp;</h3>
+<p>&nbsp;</p>
+<p><BR>
+  <BR>
+</p>
+</body>
+</html>
