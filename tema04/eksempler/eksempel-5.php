@@ -35,7 +35,7 @@
           print("Tegn 4-6 inneholder ikke bare siffre <br />");
         }
 	 
-      if(!ctype_alpha($del3) && !ctype_digit($del3))  /* det siste tegnet inneholde ikke bokstav eller siffer */
+      if(!ctype_alpha($del3) and !ctype_digit($del3))  /* det siste tegnet inneholde ikke bokstav eller siffer */
         {
           $lovligEmnekode=false;
           print("Det siste tegnet inneholde ikke bokstav eller siffer <br />");
@@ -49,3 +49,4 @@
     }
 
 ?>
+
