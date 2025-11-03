@@ -1,4 +1,4 @@
-<?php  /*  Eksempel 5 */
+<?php  /*  Eksempel 4 */
 /*
 /*    Programmet mottar emnekode fra et HTML-skjema 
 /*    Programmet sjekker om emnekode er korrekt fylt ut
@@ -49,4 +49,5 @@
     }
 
 ?>
+
 
