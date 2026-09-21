@@ -3,7 +3,7 @@
 /*    Programmet legger inn 3 navn i et array
 /*    Programmet skriver ut de 3 navnene
 */
-  $navn=array("Geir","Marius","Tove");  
+  $navn=array("Geir","Marius","Tove","Siv");  
 
   print("Det første navnet er $navn[0]<br/>");
 
