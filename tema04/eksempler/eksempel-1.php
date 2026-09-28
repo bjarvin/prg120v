@@ -4,16 +4,16 @@
 /*    Programmet lager et fullt navn ved bruk av en egendefinert fuksjon 
 */
 
-function fulltNavn($fornavn,$etternavn)
+function fulltNavn($fornavn,$etternavn)   /* funksjonsdefinisjon */
 {
-  $navn=$fornavn . " " . $etternavn;	
+  $navn=$fornavn . " " . $etternavn;	/* lokal variabel */
   return $navn; 	
 }
 
   $fornavn=$_POST ["fornavn"];
   $etternavn=$_POST ["etternavn"];  
 
-  $navn=fulltNavn($fornavn,$etternavn);
+  $navn=fulltNavn($fornavn,$etternavn);   /* funksjonskall */
 
   print ("Navnet er $navn");  
 ?>
