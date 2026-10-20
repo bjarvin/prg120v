@@ -21,12 +21,6 @@
       $postnr=$_POST ["postnr"];
       $antall=count($postnr);
 
-      if ($antall==0)
-        {
-          print ("Ingen poststeder ble valgt <br />");
-        }
-      else
-        {
           include("db-tilkobling.php");  	
           for ($r=0;$r<$antall;$r++)
             {
@@ -35,5 +29,5 @@
             }
           print ("De valgte poststedene er n&aring; slettet <br />");
         }
-    }
+
 ?> 
