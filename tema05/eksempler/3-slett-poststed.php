@@ -18,13 +18,7 @@
   if (isset($_POST ["slettPoststedKnapp"]))
     {	
       $postnr=$_POST ["postnr"];
-	  
-	  if (!$postnr)
-        {
-          print ("Postnr m&aring; fylles ut");
-        }
-      else
-        {
+
           include("db-tilkobling.php");  /* tilkobling til database-serveren utført og valg av database foretatt */
 
           $sqlSetning="SELECT * FROM poststed WHERE postnr='$postnr';";
@@ -43,6 +37,6 @@
 		
               print ("F&oslash;lgende poststed er n&aring; slettet: $postnr  <br />");
             }
-        }
+
     }
 ?> 
