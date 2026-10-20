@@ -20,13 +20,7 @@
       $postnr=$_POST ["postnr"];
       $poststed=$_POST ["poststed"];
 
-      if (!$postnr || !$poststed)
-        {
-          print ("B&aring;de postnr og poststed m&aring; fylles ut");
-        }
-      else
-        {
-          include("db-tilkobling.php");  /* tilkobling til database-serveren utført og valg av database foretatt */
+      include("db-tilkobling.php");  /* tilkobling til database-serveren utført og valg av database foretatt */
 
           $sqlSetning="SELECT * FROM poststed WHERE postnr='$postnr';";
           $sqlResultat=mysqli_query($db,$sqlSetning) or die ("ikke mulig &aring; hente data fra databasen");
@@ -44,6 +38,5 @@
 
               print ("F&oslash;lgende poststed er n&aring; registrert: $postnr $poststed"); 
             }
-        }
     }
 ?> 
