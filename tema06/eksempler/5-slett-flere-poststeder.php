@@ -18,7 +18,7 @@
 <?php
   if (isset($_POST ["slettPoststedKnapp"]))
     {
-      @$postnr=$_POST ["postnr"];
+      $postnr=$_POST ["postnr"];
       $antall=count($postnr);
 
       if ($antall==0)
