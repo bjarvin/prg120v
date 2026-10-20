@@ -19,13 +19,7 @@
     {	
       $postnr=$_POST ["postnr"];
       $poststed=$_POST ["poststed"];
-	  
-	  if (!$postnr)
-        {
-          print ("Postnr m&aring; fylles ut");
-        }
-      else
-        {
+
           include("db-tilkobling.php");  /* tilkobling til database-serveren utført og valg av database foretatt */
 
           $sqlSetning="SELECT * FROM poststed WHERE postnr='$postnr';";
@@ -44,6 +38,6 @@
 			
               print ("Poststedet med postnr $postnr er n&aring; endret<br />");
             }
-        }
+
     }
 ?> 
